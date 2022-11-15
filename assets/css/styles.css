@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+.margin {
+    margin: 15px;
+}
+nav {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 150px auto 50px;
+  text-align: right;
+  align-items: center;
+  padding-right: 20px;
+  margin-bottom: 2%;
+  grid-template-areas: 1 4;
+}
+
+nav img {
+  width: 99%;
+  padding-top: 8%;
+  padding-left: 10%;
+}
+a {
+  text-decoration: none;
+  color: gray;
+  padding: 2px;
+}
+div i {
+  color: gray;
+  padding: 2px;
+}
+aside {
+  background-color: #f68280;
+  padding-left: 1px;
+  color: black;
+}
+.categoria {
+  text-align: start;
+  padding-top: 20px;
+  font-size: 20px;
+}
+aside div {
+  padding-bottom: 12px;
+  padding-left: 8px;
+}
+h4 {
+  text-align: center;
+}
+.padding {
+  padding: 4px;
+}
+.stock {
+  color: gray;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  text-align: center;
+}
+
+.texto-comprar {
+  background-color: #f68284;
+  width: 20vh;
+  margin: auto;
+}
+.texto-precio {
+  font-size: 13px;
+}
+section div img {
+  width: 20vh;
+}
+footer {
+  background-color: gray;
+  padding: 1%;
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+  color: rgb(126, 52, 71);
+}
