@@ -1,9 +1,17 @@
+body {
+  grid-template-areas:
+    "n n n n"
+    "s c c c"
+    "s c c c"
+    "f f f f";
+}
 .container {
   display: grid;
   grid-template-columns: 150px auto;
+  grid-area: c;
 }
 .margin {
-    margin: 15px;
+  margin: 15px;
 }
 nav {
   background-color: white;
@@ -13,7 +21,7 @@ nav {
   align-items: center;
   padding-right: 20px;
   margin-bottom: 2%;
-  grid-template-areas: 1 4;
+  grid-area: n;
 }
 
 nav img {
@@ -43,6 +51,7 @@ aside {
 aside div {
   padding-bottom: 12px;
   padding-left: 8px;
+  grid-area: s;
 }
 h4 {
   text-align: center;
@@ -50,11 +59,9 @@ h4 {
 .padding {
   padding: 4px;
 }
-.stock {
-  color: gray;
-}
 
-section {
+
+article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
@@ -63,14 +70,14 @@ section {
 
 .texto-comprar {
   background-color: #f68284;
-  width: 20vh;
+  width: 30vh;
   margin: auto;
 }
 .texto-precio {
-  font-size: 13px;
+  font-size: 17px;
 }
 section div img {
-  width: 20vh;
+  width: 30vh;
 }
 footer {
   background-color: gray;
@@ -79,4 +86,5 @@ footer {
   width: 100%;
   margin-top: 5%;
   color: rgb(126, 52, 71);
+  grid-area: f;
 }
